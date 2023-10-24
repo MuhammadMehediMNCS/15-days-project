@@ -32,6 +32,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: const Text('All Notes'),
         bottom: TabBar(
           controller: controller,
@@ -60,6 +61,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         ]
       ),
       floatingActionButton: FloatingActionButton(
+        elevation: 0,
         child: const Icon(Icons.create),
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => const AddNoteInfoPage()));

@@ -16,6 +16,7 @@ class _AddUserInfoPageState extends State<AddUserInfoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: const Text('Add Your Story'),
         centerTitle: true,
       ),
